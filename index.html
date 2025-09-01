@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Autoelite</title>
+      <link rel="icon" href="./src/assets/image/logo.png" type="image/png">
+</head>
+
+<body class="bg-[#000]">
+
+    <header class="inset-x-0 bg-[#333] px-20">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1">
+
+                <img src="./src/assets/image/logo.png" alt="" class="w-50">
+
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#" class="text-sm/6 font-semibold text-white">Home</a>
+                <a href="./src/pages/estoque.html" class="text-sm/6 font-semibold text-white">Estoque</a>
+                <a href="#" class="text-sm/6 font-semibold text-white">Contatos</a>
+                <a href="#" class="text-sm/6 font-semibold text-white">Sobre nós</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#"
+                    class="text-sm/6 font-semibold text-white bg-[#EA6D27] py-2 px-9 rounded-lg hover:bg-orange-600">Entrar<span
+                        aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <img src="../assets/image/Logo_preview_rev_1.png" alt="">
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-white/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Produtos</a>
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Funcionalidades</a>
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Planos</a>
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Sbre
+                                        nós</a>
+                                </div>
+                                <div class="py-6 ">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-orange-600 bg-[#EA6D27] rounded-lg">Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+
+    <section>
+        <div>
+            <img src="https://s1.1zoom.me/b5050/517/Nissan_GT-R_Orange_Motion_551830_3840x2160.jpg" alt=""
+                class="w-full h-[30vh] sm:h-[50vh] lg:h-[70vh]">
+        </div>
+    </section>
+
+    <main class=" text-center py-5">
+
+        <div class="py-5">
+            <h1 class="text-white text-[35px] "><strong>Veículos em destaque</strong></h1>
+            <p class=" text-white">Carros novos e usados, confira os veículos mais recentes cadastrados em nosso
+                <strong class="text-[#EA6D27]">stoque.</strong>
+            </p>
+        </div>
+
+        <div class="flex gap-10  justify-center items-center gap-5 py-3 flex-wrap">
+
+            <div class="w-80 bg-[#333] border border-1 border-gray-900 rounded-sm  ">
+                <img class="w-full h-60" src="./src/assets/image/Lexus-LFA.jpg" alt="carro Lexus ALFA" />
+                <div class="p-5 bg-[#333]">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Lexus Alfa <small
+                                class="text-sm">4.8 v10 2010 </small>
+                            <h2>
+                                <p class="text-orange-500 font-bold text-lg">R$ 4.500.000,00</p>
+                    </div>
+
+                </div>
+                <p class="w-full border-b-1 border-[white]"></p>
+
+                <div class=" py-3 justify-items-center items-center bg-[#333] ">
+
+                    <ul class="flex justify-items-stretch grid grid-cols-2 gap-5 py-4">
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/velocimetro.png"
+                                alt="velocimetro"><small class="text-white">9.700</small></li>
+                        <li class="flex gap-2  items-center "><img src="./src/assets/image/cambio-de-marchas.png"
+                                alt="cambio">
+                            <small class="text-white">Automático</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/calendario.png" alt="calendario">
+                            <small class="text-white">2010</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/posto-de-gasolina.png"
+                                alt="bomba de gasolina">
+                            <small class="text-white">Gasolina</small>
+                        </li>
+                    </ul>
+
+                    <button class="bg-[#EA6D27] py-1 px-3 border border-1 border-none text-white rounded-sm"><a
+                            href="#">Comprar</a></button>
+
+                </div>
+
+            </div>
+
+            <div class="w-80 bg-[#333] border border-1 border-gray-900 rounded-sm  ">
+
+                <img class="w-full h-60" src="./src/assets/image/GTR-r35.webp" alt="carro Lexus ALFA" />
+
+                <div class="p-5 bg-[#333]">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2"> Nissan GT-R R35 <small
+                                class="text-sm">3.8 V6 2015</small>
+                            <h2>
+                                <p class="text-orange-500 font-bold text-lg">R$ 750.000,00</p>
+                    </div>
+
+                </div>
+                <p class="w-full border-b-1 border-[white]"></p>
+
+                <div class=" py-3 justify-items-center items-center bg-[#333] ">
+
+                    <ul class="flex justify-items-stretch grid grid-cols-2 gap-5 py-4 ">
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/velocimetro.png"
+                                alt="velocimetro"><small class="text-white">12.000 km</small></li>
+                        <li class="flex gap-2  items-center "><img src="./src/assets/image/cambio-de-marchas.png"
+                                alt="cambio">
+                            <small class="text-white">Automático</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/calendario.png" alt="calendario">
+                            <small class="text-white">2010</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/posto-de-gasolina.png"
+                                alt="bomba de gasolina">
+                            <small class="text-white">Gasolina</small>
+                        </li>
+                    </ul>
+                    <button class="bg-[#EA6D27] py-1 px-3 border border-1 border-none text-white rounded-sm"><a
+                            href="#">Comprar</a></button>
+                </div>
+
+            </div>
+
+            <div class="w-80 bg-[#333] border border-1 border-gray-900  rounded-sm  ">
+
+                <img class="w-full h-60" src="./src/assets/image/Mazda-MX-5.jpg" alt="carro Mazda MX 5" />
+
+                <div class="p-5 bg-[#333]">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2"> Mazda MX 5 <small
+                                class="text-sm">2.0 2010 </small>
+                            <h2>
+                                <p class="text-orange-500 font-bold text-lg">R$ 150.000,00</p>
+                    </div>
+
+                </div>
+                <p class="w-full border-b-1 border-[white]"></p>
+
+                <div class=" py-3 justify-items-center items-center bg-[#333] ">
+
+                    <ul class="flex justify-items-stretch grid grid-cols-2 gap-5 py-4">
+                        <li class="flex gap-2  items-center "><img src="./src/assets/image/velocimetro.png"
+                                alt="velocimetro"><small class="text-white">9.700</small></li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/cambio-de-marchas.png"
+                                alt="cambio">
+                            <small class="text-white">Automático</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/calendario.png" alt="calendario">
+                            <small class="text-white">2010</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/posto-de-gasolina.png"
+                                alt="bomba de gasolina">
+                            <small class="text-white">Gasolina</small>
+                        </li>
+                    </ul>
+                    <button class="bg-[#EA6D27] py-1 px-3 border border-1 border-none text-white rounded-sm"><a
+                            href="#">Comprar</a></button>
+                </div>
+
+            </div>
+
+            <div class="w-80 bg-[#333]  border border-1 border-gray-900 rounded-sm ">
+
+                <img class="w-full h-60" src="./src/assets/image/Honda-S2000.webp" alt="Honda S2000 " />
+
+                <div class="p-5 bg-[#333]">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2"> Honda S2000 <small
+                                class="text-sm">2.0 2004 </small>
+                            <h2>
+                                <p class="text-orange-500 font-bold text-lg">R$ 530.000,00</p>
+                    </div>
+
+                </div>
+                <p class="w-full border-b-1 border-[white]"></p>
+
+                <div class=" py-3 justify-items-center items-center bg-[#333] ">
+
+                    <ul class="flex justify-items-stretch grid grid-cols-2 gap-5 py-4">
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/velocimetro.png"
+                                alt="velocimetro"><small class="text-white">85.000 </small></li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/cambio-de-marchas.png"
+                                alt="cambio">
+                            <small class="text-white">Manual</small>
+                        </li>
+                        <li class="flex gap-2 items-center"><img src="./src/assets/image/calendario.png" alt="calendario">
+                            <small class="text-white">2004</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/posto-de-gasolina.png"
+                                alt="bomba de gasolina">
+                            <small class="text-white">Gasolina</small>
+                        </li>
+                    </ul>
+                    <button class="bg-[#EA6D27] py-1 px-3 border border-1 border-none text-white rounded-sm"><a
+                            href="#">Comprar</a></button>
+                </div>
+
+            </div>
+
+            <div class="w-80 bg-[#333] border border-1 border-gray-900 rounded-sm  ">
+
+                <img class="w-full h-60" src="./src/assets/image/mitsubishi-lancer.jpg" alt="Mitsubishi Lancer" />
+
+                <div class="p-5 bg-[#333]">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2"> Mitsubishi Lancer <small
+                                class="text-sm">2.0 2012 </small>
+                            <h2>
+                                <p class="text-orange-500 font-bold text-lg"> R$ 65.000,00</p>
+                    </div>
+
+                </div>
+                <p class="w-full border-b-1 border-[white]"></p>
+
+                <div class=" py-3 justify-items-center items-center bg-[#333] ">
+
+                    <ul class="flex justify-items-stretch grid grid-cols-2 gap-5 py-4">
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/velocimetro.png"
+                                alt="velocimetro"><small class="text-white">12.000 </small></li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/cambio-de-marchas.png"
+                                alt="cambio">
+                            <smal class="text-white" l>Automático</small>
+                        </li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/calendario.png" alt="calendario">
+                            <small class="text-white">2012</small>
+                        </li>
+                        <li class="flex gap-2  items-center "><img src="./src/assets/image/posto-de-gasolina.png"
+                                alt="bomba de gasolina">
+                            <small class="text-white">Gasolina</small>
+                        </li>
+                    </ul>
+                    <button class="bg-[#EA6D27] py-1 px-3 border border-1 border-none text-white rounded-sm"><a
+                            href="#">Saiba mais</a></button>
+                </div>
+
+            </div>
+
+            <div class="w-80 bg-[#333]  border border-1 border-gray-900  rounded-sm ">
+
+                <img class="w-full h-60" src="./src/assets/image/Toyota_Supra.webp" alt="Toyota Supra" />
+
+                <div class="p-5 bg-[#333]">
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Toyota Supra <small
+                                class="text-sm">3.0 Turbo 2020 </small>
+                            <h2>
+                                <p class="text-orange-500 font-bold text-lg">R$ 550.000,00</p>
+                    </div>
+
+                </div>
+                <p class="w-full border-b-1 border-[white]"></p>
+
+                <div class=" py-3 justify-items-center items-center bg-[#333]">
+
+                    <ul class="flex justify-items-stretch grid grid-cols-2 gap-5 py-4 ">
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/velocimetro.png"
+                                alt="velocimetro"><small class="text-white">15.000 </small></li>
+                        <li class="flex gap-2  items-center"><img src="./src/assets/image/cambio-de-marchas.png"
+                                alt="cambio">
+                            <small class="text-white">Automático</small>
+                        </li>
+                        <li class="flex gap-2 items-center "><img src="./src/assets/image/calendario.png" alt="calendario">
+                            <small class="text-white">2020</small>
+                        </li>
+                        <li class="flex gap-2 items-center "><img src="./src/assets/image/posto-de-gasolina.png"
+                                alt="bomba de gasolina">
+                            <small class="text-white">Gasolina</small>
+                        </li>
+                    </ul>
+                    <button class="bg-[#EA6D27] py-1 px-3 border border-1 border-none text-white rounded-sm"><a
+                            href="#">Comprar</a></button>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+    <footer class="w-full py-10 bg-[#333] text-white">
+        <div class="flex flex-col md:flex-row items-start md:items-center px-4 md:px-8">
+            <img src="./src/assets/image/logo.png" alt="Logo" class="hidden md:block w-[200px] mb-4 md:mb-0">
+
+            <div class="md:ml-8 md:w-1/2">
+                <form>
+                    <h2 class="text-sm font-semibold">Curte carro japonês de verdade?</h2>
+                    <p class="text-sm mb-3">Cadastre seu e-mail e receba as novidades mais quentes do universo JDM.
+                        Lançamentos, ofertas insanas e aquelas joias que nem aparecem no mercado.</p>
+
+                    <div class="flex flex-col sm:flex-row w-full gap-2">
+                        <label for="newsletter1" class="sr-only text-white-500">Endereço de email</label>
+                        <input id="newsletter1" type="email" required placeholder="Digite seu email"
+                            class="flex-1 px-4 py-2 rounded border border-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-orange-500 ">
+                        <button type="submit" class="px-4 py-2 rounded text-white bg-[#EA6D27] hover:bg-orange-600">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-evenly items-center py-4 border-t border-gray-700 text-sm">
+            <p class="mb-2 sm:mb-0">© 2025 AutoElite. Todos os direitos reservados.</p>
+
+            <ul class="flex gap-3 sm:flex flex-col">
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="./src/assets/image/instagram.png" alt="">@autoelitegarage
+                </li>
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="./src/assets/image/facebook.png" alt="Logo facebook">AutoElite Garage
+                </li>
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="./src/assets/image/whatsapp.png" alt="logo whatsapp">(11) 942495758
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
