@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Estouque Autoelite</title>
+</head>
+
+<body class="bg-[#000]">
+
+    <header class="inset-x-0 bg-[#333] px-20">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1">
+
+                <img src="../assets/image/logo.png" alt="" class="w-50">
+
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="../../index.html" class="text-sm/6 font-semibold text-white">Home</a>
+                <a href="./estoque.html" class="text-sm/6 font-semibold text-white">Estoque</a>
+                <a href="./contatos.html" class="text-sm/6 font-semibold text-white">Contatos</a>
+                <a href="./sobrenos.html" class="text-sm/6 font-semibold text-white">Sobre nós</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#"
+                    class="text-sm/6 font-semibold text-white bg-[#EA6D27] py-2 px-9 rounded-lg hover:bg-orange-600">Entrar<span
+                        aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <img src="../assets/image/Logo_preview_rev_1.png" alt="">
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-white/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="../../index.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Home</a>
+                                    <a href="./estoque.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Estoque</a>
+                                    <a href="./contatos.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contato</a>
+                                    <a href="./sobrenos.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Sobre
+                                        nós</a>
+                                </div>
+                                <div class="py-6 ">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-orange-600 bg-[#EA6D27] rounded-lg">Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+
+    <main class="container mx-auto my-10 px-4">
+        <div class="grid md:flex-row gap-4 items-center">
+            <h1 class="text-[40px] font-bold text-gray-900 dark:text-white mb-2">Honda NSX - Supercarro Híbrido
+                2016-2022</h1>
+            <p class="text-orange-500 font-bold text-[30px]">R$ 1.200.000</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+            <div>
+                <div class="relative">
+
+                    <div class="overflow-hidden relative rounded-xl shadow-lg h-80" id="carousel">
+                        <div class="carousel-item active">
+                            <img src="../assets/image/Honda-NSX.jpg" class="w-full h-80 object-cover rounded-xl" alt=""
+                                title="Honda NSX">
+                        </div>
+                        <div class="carousel-item hidden">
+                            <img src="../assets/image/Honda-NSX-lado.jpg" class="w-full h-80 object-cover rounded-xl"
+                                alt="" title="Honda NSX">
+                        </div>
+                        <div class="carousel-item hidden">
+                            <img src="../assets/image/Honda-NSX-traseira.jpg"
+                                class="w-full h-80 object-cover rounded-xl" alt="" title="Honda NSX">
+                        </div>
+
+                        <button
+                            class="absolute top-1/2 left-3 -translate-y-1/2 bg-gray-800/60 hover:bg-gray-800 text-white hover:cursor-pointer p-3 rounded-full"
+                            id="prev">
+                            ‹
+                        </button>
+                        <button
+                            class="absolute top-1/2 right-3 -translate-y-1/2 bg-gray-800/60 hover:bg-gray-800 text-white hover:cursor-pointer p-3 rounded-full"
+                            id="next">
+                            ›
+                        </button>
+                    </div>
+
+                    <div class="flex gap-3 mt-4">
+                        <img src="../assets/image/Honda-NSX.jpg"
+                            class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300"
+                            data-slide="0">
+                        <img src="../assets/image/Honda-NSX-lado.jpg"
+                            class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300"
+                            data-slide="1">
+                        <img src="../assets/image/Honda-NSX-traseira.jpg"
+                            class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300"
+                            data-slide="2">
+                    </div>
+
+                </div>
+
+                <div class="py-2 flex justify-items-center items-center">
+                    <ul
+                        class=" py-4 grid grid-cols-2 grid-rows-2 gap-[30px] sm:grid-cols-2 sm:grid-rows-2  md:grid-cols-4 md:grid-rows-1">
+                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
+                            <img src="../assets/image/velocimetro.png" alt="quilometragem">
+                            <span class="text-white">0 <span class="text-[#EA6D27]">km</span></span>
+                        </li>
+                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
+                            <img src="../assets/image/cambio-de-marchas.png" alt="câmbio">
+                            <span class="text-[#EA6D27]">Automático</span>
+                        </li>
+                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
+                            <img src="../assets/image/calendario.png" alt="ano">
+                            <span class="text-[#EA6D27]">2016 2022</span>
+                        </li>
+                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
+                            <img src="../assets/image/posto-de-gasolina.png" alt="combustível">
+                            <span class="text-[#EA6D27]">Híbrido</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="bg-black text-white p-6 rounded-lg border-1 border-gray-300">
+                    <div class="flex gap-4 border-b border-gray-600 mb-4">
+                        <button class="px-4 py-2 bg-[#EA6D27] text-white font-semibold">Informações sobre o
+                            veículo</button>
+                    </div>
+
+                    <h2 class="text-lg font-bold mb-3">Informações:</h2>
+
+                    <p class="mb-2">Honda NSX – Híbrido – 2016 / 2022</p>
+                    <ul class="list-disc list-inside space-y-2 text-gray-300">
+                        <li>Motor 3.5 V6 Biturbo Híbrido</li>
+                        <li>Potência combinada: 581 cv</li>
+                        <li>Transmissão Automática de 9 marchas (DCT)</li>
+                        <li>Tração Integral (AWD)</li>
+                        <li>Velocidade máxima: ~307 km/h</li>
+                        <li>0–100 km/h em 2,9s</li>
+                        <li>Peso: ~1.800 kg</li>
+                        <li>Frenagem com discos de carbono-cerâmica</li>
+                        <li>Design aerodinâmico em alumínio e fibra de carbono</li>
+                        <li>Interior em couro e Alcântara</li>
+                        <li>Sistema híbrido Sport Hybrid SH-AWD</li>
+                        <li>Painel digital e multimídia premium</li>
+                        <li>Rodas de liga leve 19” dianteiras / 20” traseiras</li>
+                        <li>Pneus de alta performance</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Tabs
+        const tabButtons = document.querySelectorAll(".tab-button");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                tabButtons.forEach(btn => btn.classList.remove("text-blue-600", "border-b-2", "border-blue-600", "font-semibold"));
+                tabContents.forEach(content => content.classList.add("hidden"));
+
+                button.classList.add("text-blue-600", "border-b-2", "border-blue-600", "font-semibold");
+                document.getElementById(button.dataset.tab).classList.remove("hidden");
+            });
+        });
+
+        // Carrossel simples
+        const slides = document.querySelectorAll("#carousel .carousel-item");
+        let index = 0;
+
+        function showSlide(i) {
+            slides.forEach(slide => slide.classList.add("hidden"));
+            slides[i].classList.remove("hidden");
+        }
+
+        document.getElementById("prev").addEventListener("click", () => {
+            index = (index - 1 + slides.length) % slides.length;
+            showSlide(index);
+        });
+
+        document.getElementById("next").addEventListener("click", () => {
+            index = (index + 1) % slides.length;
+            showSlide(index);
+        });
+
+        document.querySelectorAll("[data-slide]").forEach(thumbnail => {
+            thumbnail.addEventListener("click", () => {
+                index = parseInt(thumbnail.dataset.slide);
+                showSlide(index);
+            });
+        });
+
+        showSlide(index);
+    </script>
+
+
+    <footer class="w-full py-10 bg-[#333] text-white">
+        <div class="flex flex-col md:flex-row items-start md:items-center px-4 md:px-8">
+            <img src="../assets/image/Logo.png" alt="Logo" class="hidden md:block w-[200px] mb-4 md:mb-0">
+
+            <div class="md:ml-8 md:w-1/2">
+                <form>
+                    <h2 class="text-sm font-semibold">Curte carro japonês de verdade?</h2>
+                    <p class="text-sm mb-3">Cadastre seu e-mail e receba as novidades mais quentes do universo JDM.
+                        Lançamentos, ofertas insanas e aquelas joias que nem aparecem no mercado.</p>
+
+                    <div class="flex flex-col sm:flex-row w-full gap-2">
+                        <label for="newsletter1" class="sr-only text-white-500">Endereço de email</label>
+                        <input id="newsletter1" type="email" required placeholder="Digite seu email"
+                            class="flex-1 px-4 py-2 rounded border border-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-orange-500 ">
+                        <button type="submit" class="px-4 py-2 rounded text-white bg-[#EA6D27] hover:bg-orange-600">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-evenly items-center py-4 border-t border-gray-700 text-sm">
+            <p class="mb-2 sm:mb-0">© 2025 AutoElite. Todos os direitos reservados.</p>
+
+            <ul class="flex gap-3 sm:flex flex-col">
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="../assets/image/instagram.png" alt="">@autoelitegarage
+                </li>
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="../assets/image/facebook.png" alt="Logo facebook">AutoElite Garage
+                </li>
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="../assets/image/whatsapp.png" alt="logo whatsapp">(11) 942495758
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
