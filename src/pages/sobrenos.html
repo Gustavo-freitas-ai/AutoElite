@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Autoelite</title>
+    <link rel="icon" href="./src/assets/image/logo.png" type="image/png">
+</head>
+
+<body class="bg-[#000]">
+
+    <header class="inset-x-0 bg-[#333] px-20">
+        <nav aria-label="Global" class="flex items-center justify-between p-6 lg:px-8">
+            <div class="flex lg:flex-1">
+
+                <img src="../assets/image/logo.png" alt="" class="w-50">
+
+            </div>
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="../../index.html" class="text-sm/6 font-semibold text-white">Home</a>
+                <a href="./estoque.html" class="text-sm/6 font-semibold text-white">Estoque</a>
+                <a href="./contatos.html" class="text-sm/6 font-semibold text-white">Contatos</a>
+                <a href="./sobrenos.html" class="text-sm/6 font-semibold text-white">Sobre nós</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#"
+                    class="text-sm/6 font-semibold text-white bg-[#EA6D27] py-2 px-9 rounded-lg hover:bg-orange-600">Entrar<span
+                        aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <img src="../assets/image/Logo_preview_rev_1.png" alt="">
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-white/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="../../index.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Home</a>
+                                    <a href="./estoque.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Estoque</a>
+                                    <a href="./contatos.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Contato</a>
+                                    <a href="./sobrenos.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Sobre
+                                        nós</a>
+                                </div>
+                                <div class="py-6 ">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-orange-600 bg-[#EA6D27] rounded-lg">Entrar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+
+    <main class="py-24 relative bg-[#000]">
+        <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+            <div class="w-full justify-start items-center gap-12 grid lg:grid-cols-2 grid-cols-1">
+                <div
+                    class="w-full justify-center items-start gap-6 grid sm:grid-cols-2 grid-cols-1 lg:order-first order-last">
+                    <div class="pt-24 lg:justify-center sm:justify-end justify-start items-start gap-2.5 flex">
+                        <img class=" rounded-xl object-cover"
+                            src="https://i.pinimg.com/736x/c8/20/d4/c820d449a6177acb58966fe709eb37d0.jpg"
+                            alt="about Us image" />
+                    </div>
+                    <img class="sm:ml-0 ml-auto rounded-xl object-cover"
+                        src="https://www.dhresource.com/webp/m/0x0/f2/albu/g8/M01/C4/33/rBVaVFyPnPuAH2IeAAW5zRvwh1k883.jpg"
+                        alt="about Us image" />
+                </div>
+                <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
+                    <div class="w-full flex-col justify-center items-start gap-8 flex">
+                        <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
+                            <h2
+                                class="text-[#EA6D27] text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                                Fortalecendo Conexões para Acelerar Juntos</h2>
+                            <p class="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
+                                Cada carro que oferecemos carrega uma história de qualidade, tradição e confiança da
+                                indústria automotiva japonesa. Trabalhamos para que cada cliente encontre não apenas um
+                                veículo, mas também uma experiência única, baseada em confiança e paixão por dirigir.
+                            </p>
+                        </div>
+                        <div class="w-full lg:justify-start justify-center items-center sm:gap-10 gap-5 inline-flex">
+                            <div class="flex-col justify-start items-start inline-flex">
+                                <h3 class="text-[#EA6D27] text-4xl font-bold font-manrope leading-normal">33+</h3>
+                                <h6 class="text-gray-300 text-base font-normal leading-relaxed">Anos de experiencia</h6>
+                            </div>
+                            <div class="flex-col justify-start items-start inline-flex">
+                                <h4 class="text-[#EA6D27] text-4xl font-bold font-manrope leading-normal">125+</h4>
+                                <h6 class="text-gray-300 text-base font-normal leading-relaxed">Projetos com sucesso
+                                </h6>
+                            </div>
+                            <div class="flex-col justify-start items-start inline-flex">
+                                <h4 class="text-[#EA6D27] text-4xl font-bold font-manrope leading-normal">52+</h4>
+                                <h6 class="text-gray-300 text-base font-normal leading-relaxed">Clientes satisfeitos
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-24 relative bg-[#000]">
+        <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+            <div class="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
+                <div class="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
+                    <div class="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
+                        <h2
+                            class="text-[#EA6D27] text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
+                            Construindo Conexões Fortes com Paixão Automotiva</h2>
+                        <p class="text-gray-300 text-base font-normal leading-relaxed lg:text-start text-center">
+                            Na nossa loja, acreditamos que cada carro conta uma história de tradição, tecnologia e
+                            desempenho. Nossa missão é oferecer veículos japoneses que unem confiabilidade, design
+                            moderno e excelência em cada detalhe.
+
+                            Valorizamos a transparência, a confiança e o atendimento de qualidade, criando um espaço
+                            onde cada cliente encontra não apenas um carro, mas também a realização de um sonho.
+                            Trabalhamos para que a experiência de compra seja simples, segura e marcante, fortalecendo
+                            laços e construindo uma comunidade apaixonada pelo universo automotivo.</p>
+                    </div>
+                    <div
+                        class="sm:w-fit w-full px-3.5 py-2 hover:bg-indigo-800 transition-all duration-700 ease-in-out rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] justify-center items-center flex">
+                        <span class="px-1.5 text-white text-sm font-medium leading-6"></span>
+                    </div>
+                </div>
+                <img class="lg:mx-0 mx-auto h-full rounded-3xl object-cover" src="../assets/image/Lexus-LFA.jpg"
+                    alt="about Us image" />
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="w-full py-10 bg-[#333] text-white">
+        <div class="flex flex-col md:flex-row items-start md:items-center px-4 md:px-8">
+            <img src="../assets/image/logo.png" alt="Logo" class="hidden md:block w-[200px] mb-4 md:mb-0">
+
+            <div class="md:ml-8 md:w-1/2">
+                <form>
+                    <h2 class="text-sm font-semibold">Curte carro japonês de verdade?</h2>
+                    <p class="text-sm mb-3">Cadastre seu e-mail e receba as novidades mais quentes do universo JDM.
+                        Lançamentos, ofertas insanas e aquelas joias que nem aparecem no mercado.</p>
+
+                    <div class="flex flex-col sm:flex-row w-full gap-2">
+                        <label for="newsletter1" class="sr-only text-white-500">Endereço de email</label>
+                        <input id="newsletter1" type="email" required placeholder="Digite seu email"
+                            class="flex-1 px-4 py-2 rounded border border-gray-300 text-white focus:outline-none focus:ring-2 focus:ring-orange-500 ">
+                        <button type="submit" class="px-4 py-2 rounded text-white bg-[#EA6D27] hover:bg-orange-600">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row justify-evenly items-center py-4 border-t border-gray-700 text-sm">
+            <p class="mb-2 sm:mb-0">© 2025 AutoElite. Todos os direitos reservados.</p>
+
+            <ul class="flex gap-3 sm:flex flex-col">
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="../assets/image/instagram.png" alt="">@autoelitegarage
+                </li>
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="../assets/image/facebook.png" alt="Logo facebook">AutoElite Garage
+                </li>
+                <li class="mb-2 flex items-center gap-2">
+                    <img src="../assets/image/whatsapp.png" alt="logo whatsapp">(11) 942495758
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
