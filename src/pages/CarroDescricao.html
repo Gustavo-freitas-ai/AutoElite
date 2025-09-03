@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="../js/script.js" defer></script>
     <title>Estouque Autoelite</title>
 </head>
 
@@ -80,89 +81,72 @@
         </el-dialog>
     </header>
 
-    <main class="container mx-auto my-10 px-4">
-        <div class="grid md:flex-row gap-4 items-center">
-            <h1 class="text-[40px] font-bold text-gray-900 dark:text-white mb-2">Honda NSX - Supercarro Híbrido
-                2016-2022</h1>
-            <p class="text-orange-500 font-bold text-[30px]">R$ 1.200.000</p>
+    <main class="w-full py-3">
+
+        <div class="text-center pb-3">
+            <h1 class="text-[32px] md:text-[40px] font-bold text-gray-900 dark:text-white">
+                Honda NSX - Supercarro Híbrido 2016-2022
+            </h1>
+            <p class="text-orange-500 font-bold text-[24px] md:text-[30px] mt-2">R$ 1.200.000</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div>
-                <div class="relative">
 
-                    <div class="overflow-hidden relative rounded-xl shadow-lg h-80" id="carousel">
-                        <div class="carousel-item active">
-                            <img src="../assets/image/Honda-NSX.jpg" class="w-full h-80 object-cover rounded-xl" alt=""
-                                title="Honda NSX">
-                        </div>
-                        <div class="carousel-item hidden">
-                            <img src="../assets/image/Honda-NSX-lado.jpg" class="w-full h-80 object-cover rounded-xl"
-                                alt="" title="Honda NSX">
-                        </div>
-                        <div class="carousel-item hidden">
-                            <img src="../assets/image/Honda-NSX-traseira.jpg"
-                                class="w-full h-80 object-cover rounded-xl" alt="" title="Honda NSX">
-                        </div>
-
-                        <button
-                            class="absolute top-1/2 left-3 -translate-y-1/2 bg-gray-800/60 hover:bg-gray-800 text-white hover:cursor-pointer p-3 rounded-full"
-                            id="prev">
-                            ‹
-                        </button>
-                        <button
-                            class="absolute top-1/2 right-3 -translate-y-1/2 bg-gray-800/60 hover:bg-gray-800 text-white hover:cursor-pointer p-3 rounded-full"
-                            id="next">
-                            ›
-                        </button>
-                    </div>
-
-                    <div class="flex gap-3 mt-4">
-                        <img src="../assets/image/Honda-NSX.jpg"
-                            class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300"
-                            data-slide="0">
-                        <img src="../assets/image/Honda-NSX-lado.jpg"
-                            class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300"
-                            data-slide="1">
-                        <img src="../assets/image/Honda-NSX-traseira.jpg"
-                            class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300"
-                            data-slide="2">
-                    </div>
-
+        <section class="w-full max-w-6xl mx-auto px-4">
+            <div class="relative w-full h-80 md:h-[500px] rounded-xl overflow-hidden shadow-lg" id="carousel">
+                <div class="carousel-item active">
+                    <img src="../assets/image/Honda-NSX.jpg" class="w-full h-full object-cover" alt="Honda NSX"
+                        title="Honda NSX">
+                </div>
+                <div class="carousel-item hidden">
+                    <img src="../assets/image/Honda-NSX-lado.jpg" class="w-full h-full object-cover" alt="Honda NSX"
+                        title="Honda NSX">
+                </div>
+                <div class="carousel-item hidden">
+                    <img src="../assets/image/Honda-NSX-traseira.jpg" class="w-full h-full object-cover" alt="Honda NSX"
+                        title="Honda NSX">
                 </div>
 
-                <div class="py-2 flex justify-items-center items-center">
-                    <ul
-                        class=" py-4 grid grid-cols-2 grid-rows-2 gap-[30px] sm:grid-cols-2 sm:grid-rows-2  md:grid-cols-4 md:grid-rows-1">
-                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
-                            <img src="../assets/image/velocimetro.png" alt="quilometragem">
-                            <span class="text-white">0 <span class="text-[#EA6D27]">km</span></span>
-                        </li>
-                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
-                            <img src="../assets/image/cambio-de-marchas.png" alt="câmbio">
-                            <span class="text-[#EA6D27]">Automático</span>
-                        </li>
-                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
-                            <img src="../assets/image/calendario.png" alt="ano">
-                            <span class="text-[#EA6D27]">2016 2022</span>
-                        </li>
-                        <li class="flex flex-col items-center gap-1 bg-gray-900 p-3 rounded-lg border border-gray-700">
-                            <img src="../assets/image/posto-de-gasolina.png" alt="combustível">
-                            <span class="text-[#EA6D27]">Híbrido</span>
-                        </li>
-                    </ul>
+                <button class="absolute top-1/2 left-3 -translate-y-1/2 bg-gray-800/60 text-white p-3 rounded-full"
+                    id="prev">‹</button>
+                <button class="absolute top-1/2 right-3 -translate-y-1/2 bg-gray-800/60 text-white p-3 rounded-full"
+                    id="next">›</button>
+            </div>
 
-                </div>
+            <div class="flex gap-3 mt-4 justify-center">
+                <img src="../assets/image/Honda-NSX.jpg"
+                    class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300" data-slide="0">
+                <img src="../assets/image/Honda-NSX-lado.jpg"
+                    class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300" data-slide="1">
+                <img src="../assets/image/Honda-NSX-traseira.jpg"
+                    class="w-20 h-20 object-cover rounded-lg cursor-pointer border border-gray-300" data-slide="2">
+            </div>
+        </section>
 
-                <div class="bg-black text-white p-6 rounded-lg border-1 border-gray-300">
-                    <div class="flex gap-4 border-b border-gray-600 mb-4">
-                        <button class="px-4 py-2 bg-[#EA6D27] text-white font-semibold">Informações sobre o
-                            veículo</button>
-                    </div>
+        <section class="container mx-auto my-10 px-4 space-y-10">
 
-                    <h2 class="text-lg font-bold mb-3">Informações:</h2>
+            <ul class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <li class="flex flex-col items-center bg-gray-900 p-3 rounded-lg border border-gray-700">
+                    <img src="../assets/image/velocimetro.png" alt="quilometragem">
+                    <span class="text-white">0 <span class="text-[#EA6D27]">km</span></span>
+                </li>
+                <li class="flex flex-col items-center bg-gray-900 p-3 rounded-lg border border-gray-700">
+                    <img src="../assets/image/cambio-de-marchas.png" alt="câmbio">
+                    <span class="text-[#EA6D27]">Automático</span>
+                </li>
+                <li class="flex flex-col items-center bg-gray-900 p-3 rounded-lg border border-gray-700">
+                    <img src="../assets/image/calendario.png" alt="ano">
+                    <span class="text-[#EA6D27]">2016 - 2022</span>
+                </li>
+                <li class="flex flex-col items-center bg-gray-900 p-3 rounded-lg border border-gray-700">
+                    <img src="../assets/image/posto-de-gasolina.png" alt="combustível">
+                    <span class="text-[#EA6D27]">Híbrido</span>
+                </li>
+            </ul>
 
-                    <p class="mb-2">Honda NSX – Híbrido – 2016 / 2022</p>
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="bg-black text-white p-6 rounded-lg border border-gray-700">
+                    <h2 class="text-xl font-bold mb-4">Informações do Veículo</h2>
                     <ul class="list-disc list-inside space-y-2 text-gray-300">
                         <li>Motor 3.5 V6 Biturbo Híbrido</li>
                         <li>Potência combinada: 581 cv</li>
@@ -181,53 +165,22 @@
                     </ul>
                 </div>
 
+                <div class="bg-gray-100 dark:bg-gray-900 p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-bold mb-4 text-[#EA6D27]">Entre em contato</h2>
+                    <form class="grid gap-4">
+                        <input type="text" placeholder="Seu nome" class="p-3 rounded-lg border border-gray-300 w-full text-white">
+                        <input type="email" placeholder="Seu e-mail"
+                            class="p-3 rounded-lg border border-gray-300 w-full text-white">
+                        <textarea placeholder="Sua mensagem"
+                            class="p-3 rounded-lg border border-gray-300 w-full text-white"></textarea>
+                        <button
+                            class="bg-[#EA6D27] text-white px-6 py-3 rounded-lg font-semibold hover:bg-orange-600">Enviar</button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
     </main>
 
-    <script>
-        // Tabs
-        const tabButtons = document.querySelectorAll(".tab-button");
-        const tabContents = document.querySelectorAll(".tab-content");
-
-        tabButtons.forEach(button => {
-            button.addEventListener("click", () => {
-                tabButtons.forEach(btn => btn.classList.remove("text-blue-600", "border-b-2", "border-blue-600", "font-semibold"));
-                tabContents.forEach(content => content.classList.add("hidden"));
-
-                button.classList.add("text-blue-600", "border-b-2", "border-blue-600", "font-semibold");
-                document.getElementById(button.dataset.tab).classList.remove("hidden");
-            });
-        });
-
-        // Carrossel simples
-        const slides = document.querySelectorAll("#carousel .carousel-item");
-        let index = 0;
-
-        function showSlide(i) {
-            slides.forEach(slide => slide.classList.add("hidden"));
-            slides[i].classList.remove("hidden");
-        }
-
-        document.getElementById("prev").addEventListener("click", () => {
-            index = (index - 1 + slides.length) % slides.length;
-            showSlide(index);
-        });
-
-        document.getElementById("next").addEventListener("click", () => {
-            index = (index + 1) % slides.length;
-            showSlide(index);
-        });
-
-        document.querySelectorAll("[data-slide]").forEach(thumbnail => {
-            thumbnail.addEventListener("click", () => {
-                index = parseInt(thumbnail.dataset.slide);
-                showSlide(index);
-            });
-        });
-
-        showSlide(index);
-    </script>
 
 
     <footer class="w-full py-10 bg-[#333] text-white">
